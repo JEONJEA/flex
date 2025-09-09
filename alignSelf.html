@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      .container {
+        display: flex;
+        background-color: lightgray;
+        height: 300px;
+      }
+      .container > div {
+        color: white;
+        margin: 4px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+        flex: 1 1 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div style="background-color: red; align-self: stretch">A(stretch)</div>
+      <div style="background-color: orange; align-self: start">B(start)</div>
+      <div style="background-color: lightcoral; align-self: center">
+        C(center)
+      </div>
+      <div style="background-color: green; align-self: end">D(end)</div>
+    </div>
+  </body>
+</html>
