@@ -1,0 +1,76 @@
+/* style.css */
+html,
+body {
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #263343;
+  padding: 8px 12px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.navbar-logo {
+  font-size: 24px;
+  color: white;
+}
+.navbar-logo span {
+  color: #f05533;
+}
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+}
+.navbar-menu li {
+  padding: 8px 12px;
+}
+.navbar-menu li:hover {
+  background-color: #66d4bc;
+  border-radius: 7px;
+}
+.navbar-icons span {
+  padding: 8px 12px;
+  color: white;
+}
+.navbar-toggleBtn {
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: #d49466;
+  display: none;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: start;
+    padding: 8px 24px;
+  }
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
+  }
+  .navbar-menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-icons {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+  .navbar-toggleBtn {
+    display: block;
+  }
+  .navbar-menu.active,
+  .navbar-icons.active {
+    display: block; /*flex를 사용해도 됨" */
+  }
+}

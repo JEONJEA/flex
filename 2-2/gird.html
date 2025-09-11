@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body,
+      html {
+        margin: 0 0;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 200px 250px 150px; /*3개의 열*/
+        grid-template-rows: 200px 300px 100px; /*3행 */
+        gap: 10px; /* grid-column-gap과 grid-row-gap */
+        width: 700px;
+        margin: 0 auto;
+        background-color: lightgray;
+      }
+      .grid-item {
+        background-color: #0f0f;
+        font-size: 2rem;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">1. 대한민국 생활체육의 일상화 실현</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">
+        <img
+          src="https://picsum.photos/200/300"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">
+        <img src="https://picsum.photos/200/300" style="width: 100%" />
+      </div>
+      <div class="grid-item">6</div>
+    </div>
+  </body>
+</html>
