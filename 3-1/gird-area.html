@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body,
+      html {
+        margin: 0 0;
+      }
+      .grid-container {
+        display: grid;
+        grid-gap: 0.5rem;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        background-color: beige;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 120px 1fr 70px;
+        grid-template-areas:
+          "header  header  header"
+          "nav  main  aside"
+          "footer  footer  footer";
+      }
+      .grid-item {
+        background-color: lightblue;
+        font-size: 2rem;
+      }
+      .header {
+        grid-area: header;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .nav {
+        grid-area: nav;
+        background-color: gray;
+      }
+      .main {
+        grid-area: main;
+        background-color: blue;
+      }
+      .aside {
+        grid-area: aside;
+        background-color: yellow;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item header">header</div>
+      <div class="grid-item nav">nav</div>
+      <div class="grid-item main">main</div>
+      <div class="grid-item aside">aside</div>
+      <div class="grid-item footer">footer</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body,
+      html {
+        margin: 0 0;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 200px 1fr 150px;
+        grid-template-rows: 150px 1fr 100px;
+        grid-gap: 0.5rem; /* grid-column-gap과 grid-row-gap */
+        width: 960px; /*너비를 제거하고도 실행해 보세요.*/
+        height: 100vh;
+        margin: 0 auto;
+        background-color: yellow;
+      }
+      .grid-item {
+        background-color: red;
+        font-size: 2rem;
+      }
+      .header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+      .nav {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: green;
+      }
+      .main {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: navy;
+      }
+      .aside {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: pink;
+      }
+      .footer {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: gray;
+      }
+    </style>
+  </head>
+</html>
+<body>
+
+<div class="grid-container">
+   <div class="grid-item header">header</div>
+   <div class="grid-item nav">nav</div>
+   <div class="grid-item main">main</div>  
+   <div class="grid-item aside">aside</div>
+   <div class="grid-item footer">footer</div>   
+</div>
+</body>
+</html>

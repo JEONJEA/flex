@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      html,
+      body {
+        background-color: beige;
+      }
+      .container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: skyblue;
+        padding: 0.2em;
+        width: 720px;
+        height: 500px;
+        margin: 0 auto;
+      }
+      .item1,
+      .item2,
+      .item3,
+      .item4,
+      .item5,
+      .item6 {
+        background-color: purple;
+        text-align: center;
+        color: white;
+        padding: 20px 0;
+        font-size: 30px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="padding-left: 3em">그리드와 inline-flex를 가지고...</h1>
+    <div class="container">
+      <div class="item1">11-자화자찬</div>
+      <div class="item2">22-축복</div>
+      <div class="item3">33-인연</div>
+      <div class="item4">44-묘기</div>
+      <div class="item5">55-진리</div>
+      <div class="item6">66-사랑</div>
+    </div>
+  </body>
+</html>
