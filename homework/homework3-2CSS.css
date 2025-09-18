@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* body {
+  min-height: 100vh;
+  background-color: lightgray;
+} */
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 5px;
+  /* grid-template-columns: 300px 1fr; */
+  /* 아래는 빈 공간을 알아서 자동으로 채우며,
+   최소 180px은 유지하고, 여백은 공평하게 분배 */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  /*하나로 고정하려면 180px만 사용[minmax(180px, 200px);](자동row 생성)*/
+  grid-auto-rows: minmax(180px, 200px);
+  background-color: beige;
+}
+.image > img {
+  object-fit: cover; /*contain*/
+  width: 100%; /*이미지에 직접 주어진 공간을 모두 사용하도록 함*/
+}
+.image {
+  transition: all 0.5s;
+}
+.image:hover {
+  transform: scale(1.08) translateZ(50px);
+}
